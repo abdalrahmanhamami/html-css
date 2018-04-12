@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grids</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1 class="header-to-center">Drone World</h1>
+            <img class="header-svg" src="data:image/png;base64,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">
+        </header>
+        <!-- <img class="header-background" src="http://immerse360.com.au/wp-content/uploads/2016/03/drone-logo-1024x309.png" alt="header-background"> -->
+        <section class="our-section">
+        <main>
+                <h2 class="to-center">Grid with flexbox</h2>
+                <ul id="grid-flex">
+                    <li class="grid-item grid-item1">
+                        <h3>Drone 6-AXIS + camera</h3>
+                        <img class="grid-item-img" src="file:///C:/Users/LENOVO~1/AppData/Local/Temp/Rar$EXa12308.9752/Homework2/images/drone1.png" width="600px" height="275px">
+                        <p>Oyuncakçı Eddy’nin dronu yeni başlayanlar için, altı ekseni var. 2.4Ghz kumadasıyla hareket ederek 50 metre yüksekliğe kadar çıkabilir. Uçuş süresi ise 6 dakika.</p>
+                    </li>
+                    <li class="grid-item grid-item2">
+                        <h3>DJI Mavic Pro Fly More Combo</h3>
+                        <img src="file:///C:/Users/LENOVO~1/AppData/Local/Temp/Rar$EXa12308.9752/Homework2/images/drone2.png" width="300px">
+                         <p dir="rtl">طائرة مافيك: مايميز هذه الطائرة هو صغر حجمها، وهي معيار جديد في مجال الطائرات من دون طيار. طائرة المافيك مفيدة كثيراً في الحالات التي لايكون الطيران فيها سهلاً، وذلك بفضل التقنيات العديدة المدمجة فيها.</p>
+                    </li>
+                    <li class="grid-item grid-item3">
+                        <h3>DJI Phantom 4</h3>
+                        <img src="file:///C:/Users/LENOVO~1/AppData/Local/Temp/Rar$EXa12308.9752/Homework2/images/drone3.png" width="300px">
+                        <p>De DJI Phantom 4 is een intelligente drone die onder meer automatisch obstakels vermijdt en 4K-beelden opneemt. Uiteraard is dit niet het enige waar de Phantom 4 indruk mee maakt. Wat dacht je van ActiveTrack, een sportmodus en een nog langere vliegduur.</p>
+                    </li>
+                    <li class="grid-item grid-item4">
+                        <h3>DJI Phantom 3 Standard</h3>
+                        <img src="file:///C:/Users/LENOVO~1/AppData/Local/Temp/Rar$EXa12308.9752/Homework2/images/drone4.png" width="300px">
+                        <p>Met een bereik van 500 meter, een Full HD-camera die met 30 fps opneemt en een f/2.8-lens maakt u met de DJI Phantom 3 standard de mooiste opnames vanuit de lucht.</p>
+                    </li>
+                    <li class="grid-item grid-item5">
+                        <h3>YUNEEC Breeze 4K</h3>
+                        <img src="file:///C:/Users/LENOVO~1/AppData/Local/Temp/Rar$EXa12308.9752/Homework2/images/drone5.png" width="300px">
+                        <p>De Breeze 4K van Yuneec is makkelijk te besturen, veilig en snel in staat opnames te delen. De drone wordt bestuurd met je iOS- of Android-apparaat en produceert indrukwekkende 4K-beelden.</p>
+                    </li>
+                    <li class="grid-item grid-item6">
+                        <h3>SKEYE Nano Drone</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone6.png" width="300px">
+                        <p>Met de Nano Drone kan iedereen het gevoel van vliegen met een drone ervaren. De zeer kleine drone van slechts vier centimeter breed is na uitpakken direct klaar om te vliegen.</p>
+                    </li>
+                    <li class="grid-item grid-item7">
+                        <h3>DJI Spreading Wings S900</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone7.png" width="300px">
+                        <p>Met prachtige luchtfoto's en -video's maak je indruk. De DJI Spreading Wings S900 is een lichtgewicht drone die met zijn draaggewicht van maximaal 8,2 kilogram voorziet in het maken van dergelijke beelden.</p>
+                    </li>
+                    <li class="grid-item grid-item8">
+                        <h3>Drone 6-AXIS + camera</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone1.png" width="300px">
+                        <p>De Eddy Toys Drone is een instap drone met 6 assen en laat zich besturen door de meegeleverde 2.4Ghz controller met een bereik tot 50m hoogte.Vliegduur is 6 minuten.</p>
+                    </li>
+                    <li class="grid-item grid-item9">
+                        <h3>DJI Mavic Pro Fly More Combo</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone2.png" width="300px">
+                        <p>Met de Mavic, die direct opvalt vanwege zijn kleine afmeting, zet DJI een nieuwe standaard op het gebied van drones. De Mavic is zeer behulpzaam tijdens de niet altijd even makkelijke vluchten, vooral dankzij de vele ingebouwde technieken.</p>
+                    </li>
+                    <li class="grid-item grid-item10">
+                        <h3>DJI Phantom 4</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone3.png" width="300px">
+                        <p>De DJI Phantom 4 is een intelligente drone die onder meer automatisch obstakels vermijdt en 4K-beelden opneemt. Uiteraard is dit niet het enige waar de Phantom 4 indruk mee maakt. Wat dacht je van ActiveTrack, een sportmodus en een nog langere vliegduur.</p>
+                    </li>
+                    <li class="grid-item grid-item11">
+                        <h3>DJI Phantom 3 Standard</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone4.png" width="300px">
+                        <p>Met een bereik van 500 meter, een Full HD-camera die met 30 fps opneemt en een f/2.8-lens maakt u met de DJI Phantom 3 standard de mooiste opnames vanuit de lucht.</p>
+                    </li>
+                    <li class="grid-item grid-item12">
+                        <h3>YUNEEC Breeze 4K</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone5.png" width="300px">
+                        <p>De Breeze 4K van Yuneec is makkelijk te besturen, veilig en snel in staat opnames te delen. De drone wordt bestuurd met je iOS- of Android-apparaat en produceert indrukwekkende 4K-beelden.</p>
+                    </li>
+                    <li class="grid-item grid-item13">
+                        <h3>SKEYE Nano Drone</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone6.png "width="300px">
+                        <p>Met de Nano Drone kan iedereen het gevoel van vliegen met een drone ervaren. De zeer kleine drone van slechts vier centimeter breed is na uitpakken direct klaar om te vliegen.</p>
+                    </li>
+                    <li class="grid-item grid-item14">
+                        <h3>DJI Spreading Wings S900</h3>
+                        <img src="file:///C:/Users/lenovo%202/Desktop/homewok/images/drone7.png" width="300px">
+                        <p>Met prachtige luchtfoto's en -video's maak je indruk. De DJI Spreading Wings S900 is een lichtgewicht drone die met zijn draaggewicht van maximaal 8,2 kilogram voorziet in het maken van dergelijke beelden.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

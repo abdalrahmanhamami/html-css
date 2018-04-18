@@ -7,6 +7,17 @@
 }
 .to-center{text-align: center;}
 
+li {
+border: 1px solid grey;
+overflow: hidden;
+}
+h3 {
+text-align: center;
+}
+p {
+padding: 0 15px;
+}
+
 .header-svg{ 
     width: 250px;
     /* height: 100px; */
